@@ -1,0 +1,29 @@
+{
+  "name": "altcoin-charter",
+  "version": "1.0.0",
+  "description": "Charts the histories of user saved cryptocurrencies",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Sdw",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "*",
+    "concurrently": "^3.5.1",
+    "cors": "2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "*",
+    "mongoose": "^4.13.9",
+    "mongoose-unique-validator": "^1.0.6",
+    "nodemon": "^1.14.7",
+    "passport": "*",
+    "passport-jwt": "*"
+  }
+}
